@@ -4,8 +4,8 @@ import torch.nn as nn
 import torch.optim as optim
 import config
 from dataset import MapDataset
-from generator_model import Generator
-from discriminator_model import Discriminator
+from generator import Generator
+from discriminator import Discriminator
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 from torchvision.utils import save_image
