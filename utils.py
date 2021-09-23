@@ -24,7 +24,7 @@ def save_eval_examples(gen, val_loader, folder):
         y_fake = y_fake * 0.5 + 0.5  # remove normalization#
         save_image(y_fake, folder + f"/y_gen.png")
         save_image(x * 0.5 + 0.5, folder + f"/input.png")
-        save_image(y * 0.5 + 0.5, folder + f"/label.png")
+        
 
 
 
