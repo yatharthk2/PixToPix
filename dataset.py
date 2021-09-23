@@ -32,7 +32,7 @@ class MapDataset(Dataset):
 
 
 if __name__ == "__main__":
-    dataset = MapDataset("data/train/")
+    dataset = MapDataset("dataset/maps/maps/train")
     loader = DataLoader(dataset, batch_size=5)
     for x, y in loader:
         print(x.shape)
