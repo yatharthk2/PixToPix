@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 LABEL org.opencontainer.image.authors="Yatharth Kapadia" \
       org.opencontainer.image.source="https://github.com/yatharthk2/PixToPix" \
-      org.opencontainer.image.description="A simple mnist Neural Network based project with all the functionalities that of a real repo " 
+      org.opencontainer.image.description="A conditional gans based project with all the functionalities that of a real repo " 
 ENV PATH="/root/miniconda3/bin:${PATH}"
 ARG PATH="/root/miniconda3/bin:${PATH}"
 RUN apt-get update

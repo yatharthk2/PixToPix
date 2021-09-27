@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from torchsummary import summary
 
 
 class CNNBlock(nn.Module):
@@ -54,15 +55,4 @@ class Discriminator(nn.Module):
         x = self.model(x)
         return x
 
-
-def test():
-    x = torch.randn((1, 3, 256, 256))
-    y = torch.randn((1, 3, 256, 256))
-    model = Discriminator(in_channels=3)
-    preds = model(x, y)
-    print(model)
-    print(preds.shape)
-
-
-if __name__ == "__main__":
-    test()
+print('hello')

@@ -31,13 +31,3 @@ class MapDataset(Dataset):
         return input_image, target_image
 
 
-if __name__ == "__main__":
-    dataset = MapDataset("dataset/maps/maps/train")
-    loader = DataLoader(dataset, batch_size=5)
-    for x, y in loader:
-        print(x.shape)
-        save_image(x, "x.png")
-        save_image(y, "y.png")
-        import sys
-
-        sys.exit()
